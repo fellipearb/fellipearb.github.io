@@ -1,0 +1,21 @@
+{
+  "name": "terminal",
+  "description": "Estuudos - Terminal no site",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "animate.css": "^3.5.2",
+    "jquery": "^3.1.0"
+  },
+  "dependencies": {
+    "moment": "^2.15.0"
+  }
+}
