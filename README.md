@@ -17,9 +17,9 @@ https://angularjs.org/<br>
 https://ui-router.github.io/ng1/<br>
 http://swagger.io/<br><br>
 
-<h1>Home - Atomic Design</h1><br>
-<h2>Banner</h2><br>
-<h3>Atomos:</h3><br>
+<h1>Home - Atomic Design</h1>
+<h2>Banner</h2>
+<h3>Atomos:</h3>
 <ul>
     <li>Link</li>
     <li>Imagem</li>
@@ -27,14 +27,14 @@ http://swagger.io/<br><br>
     <li>Botões</li>    
 </ul><br>
 
-<h3>Moléculas:</h3><br>
+<h3>Moléculas:</h3>
 <p>Itens do banner</p>
 
-<h3>Organismos:</h3><br>
+<h3>Organismos:</h3>
 <p>Banner</p><br>
 
-<h2>Menu Promoção</h2><br>
-<h3>Atomos:</h3><br>
+<h2>Menu Promoção</h2>
+<h3>Atomos:</h3>
 <ul>
     <li>Icone</li>
     <li>Titulo</li>
@@ -42,21 +42,21 @@ http://swagger.io/<br><br>
     <li>Separador</li>
 </ul><br>
 
-<h3>Moléculas:</h3><br>
+<h3>Moléculas:</h3>
 <p>Itens do menu</p>
 
-<h3>Organismos:</h3><br>
+<h3>Organismos:</h3>
 <p>Menu Promoção</p><br>
 
-<h2>Texto Legal</h2><br>
-<h3>Atomos:</h3><br>
+<h2>Texto Legal</h2>
+<h3>Atomos:</h3>
 <ul>
     <li>Titulo</li>
     <li>Texto legal</li>
 </ul><br>
 
-<h3>Moléculas:</h3><br>
+<h3>Moléculas:</h3>
 <p>Texto</p>
 
-<h3>Organismos:</h3><br>
+<h3>Organismos:</h3>
 <p>Texto Legal</p><br>
