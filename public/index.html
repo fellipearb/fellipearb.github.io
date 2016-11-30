@@ -15,12 +15,12 @@
 
     <body ng-init="name='Teste Angular'">
         <p ng-bind="name"></p>
-        <form name="post" ng-model="post">            
+        <form name="post" ng-model="post">
             <input type="email" name="email" ng-model="email" ng-required="true" ng-class="{'invalid-field': post.email.$invalid && post.email.$dirty}" />
             <button ng-disabled="post.$invalid">teste</button>
         </form>
         <!--Incluindo css plugins-->
-        <link href="assets/bower_components/boostrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <!--Incluindo css dev-->
         <link href="assets/css/main.css" rel="stylesheet">
