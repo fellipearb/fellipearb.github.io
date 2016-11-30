@@ -1,4 +1,4 @@
-Name: Óticas Carol - Promoções V2
+<p>Name: Óticas Carol - Promoções V2</p>
 Descrição: Novo portal de promoções para Óticas Carol, com foco na componentização dos elementos utilizando técnicas do Atomic.
 Motivo: Com base nos aprendizados obtidos durante o treinamento na vivo, decidimos utilizar este projeto como um projeto teste, devido a baixa complexidade de elementos e funcionalidades.
 Responsáveis: Fellipe Barros, Renan Zucherato, Cleberson Gomes.
