@@ -1,6 +1,6 @@
 {
-  "name": "Avianca",
-  "description": "",
+  "name": "terminal",
+  "description": "Estudos - Terminal no site",
   "version": "1.0.0",
   "devDependencies": {
     "browser-sync": "*",
