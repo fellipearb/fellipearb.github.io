@@ -5,7 +5,7 @@
 
 <p>Passos previsto para o desenvolvimento:</p>
 <p>Criação de estrutura básica para desenvolvimento - Gulp, Sass, Jsmin e Browsersync.</p> 
-<p>Instalação de plugins/frameworks - Angular 1.5.9, Boostrap e Swagger.</p>
+<p>Instalação de plugins/frameworks - Angular 1.5.9, Angular UI Route, Boostrap e Swagger.</p>
 <p>Definição de atomos, criação de moléculas, organismos, templates e páginas.</p>
 <p>Criação de funcionalidades e mocks.</p>
 <p>Criação de teste automatizados.</p><br>
@@ -14,4 +14,8 @@ Referências:<br>
 http://tableless.com.br/o-que-e-design-atomic/<br>
 http://getbootstrap.com/<br>
 https://angularjs.org/<br>
-http://swagger.io/<br>
+https://ui-router.github.io/ng1/<br>
+http://swagger.io/<br><br>
+
+Atomos:<br>
+<p></p>
