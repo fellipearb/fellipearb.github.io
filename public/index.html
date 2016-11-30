@@ -7,14 +7,18 @@
 -->
 
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Óticas Carol</title>
-</head>
-<body>
-    <link href="assets/css/main.css" rel="stylesheet">
-    <script src="assets/bower_components/angular/angular.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+<html lang="pt-BR" ng-app>
+    <head>
+        <meta charset="UTF-8">
+        <title>Óticas Carol</title>
+    </head>
+
+    <body ng-init="name='teste'">
+        <p>{{name}}</p>
+        <link href="assets/bower_components/boostrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <script src="assets/bower_components/angular/angular.min.js"></script>
+        <script src="assets/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>
