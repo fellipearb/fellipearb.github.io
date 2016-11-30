@@ -30,7 +30,7 @@ gulp.task('sass', function(){
 	gulp.src('./src/**/*.sass')
         .pipe(changed('./public/assets', {extension: '.min.css'}))
         .pipe(debug({title: 'SASS:'}))
-        .pipe(rename({suffix: '.min'}))
+        //.pipe(rename({suffix: '.min'}))
 		.pipe(sass({
             sourceComments: 'map',
             sourceMap: 'sass',
@@ -44,7 +44,7 @@ gulp.task('jsmin', function () {
     gulp.src('./src/**/*.js')
         .pipe(changed('./public/assets', {extension: '.min.js'}))
         .pipe(debug({title: 'JS:'}))
-        .pipe(rename({suffix: '.min'}))
+        //.pipe(rename({suffix: '.min'}))
         .pipe(jsmin())
         .pipe(gulp.dest('./public/assets'))
         .on('error', gutil.log)
