@@ -10,7 +10,7 @@
 <p>Criação de funcionalidades e mocks.</p>
 <p>Criação de teste automatizados.</p><br>
 
-Referências:
+Referências:<br>
 http://tableless.com.br/o-que-e-design-atomic/<br>
 http://getbootstrap.com/<br>
 https://angularjs.org/<br>
