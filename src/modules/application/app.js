@@ -1,1 +1,1 @@
-var oticas = angular.module('oticascarol', ['ui.router']);
+var app = angular.module('oticascarol', ['ui.router']);

@@ -55,7 +55,7 @@ gulp.task('jsmin', function () {
 });
 
 gulp.task('minify', function() {
-  return gulp.src('src/*.html')
+  return gulp.src(['src/*.html', 'src/**/*.html', 'src/**/**/*.html'])
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('app'));
 });

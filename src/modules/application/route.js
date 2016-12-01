@@ -1,16 +1,13 @@
-oticas.config(function ($stateProvider) {
-    var helloState = {
-        name: 'hello',
-        url: '/hello',
-        template: '<h3>hello world!</h3>'
+app.config(function ($stateProvider, $urlRouterProvider) {
+    
+    $urlRouterProvider.otherwise('/');
+
+    var homeState = {
+        name: 'home',
+        url: '/',
+        templateUrl: 'modules/home/partials/home.html',
+        //controller: "HomeCtrl",
     }
 
-    var aboutState = {
-        name: 'about',
-        url: '/about',
-        template: '<h3>Its the UI-Router hello world app!</h3>'
-    }
-
-    $stateProvider.state(helloState);
-    $stateProvider.state(aboutState);
+    $stateProvider.state(homeState);
 });
