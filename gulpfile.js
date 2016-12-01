@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jsmin = require('gulp-jsmin');
+var htmlmin = require('gulp-htmlmin');
 var rename = require('gulp-rename');
 var changed = require('gulp-changed');
 var debug = require('gulp-debug');
@@ -28,7 +29,7 @@ gulp.task('gulp-reload', function() {
 //default tasks
 gulp.task('sass', function(){
 	gulp.src('./src/**/*.sass')
-        .pipe(changed('./public/assets', {extension: '.min.css'}))
+        .pipe(changed('./app', {extension: '.min.css'}))
         .pipe(debug({title: 'SASS:'}))
         //.pipe(rename({suffix: '.min'}))
 		.pipe(sass({
@@ -36,21 +37,27 @@ gulp.task('sass', function(){
             sourceMap: 'sass',
             outputStyle: 'nested'
         }).on('error', theError))
-		.pipe(gulp.dest('./public/assets'))
+		.pipe(gulp.dest('./app'))
 		.pipe(browserSync.stream());
 });
 
 gulp.task('jsmin', function () {
     gulp.src('./src/**/*.js')
-        .pipe(changed('./public/assets', {extension: '.min.js'}))
+        .pipe(changed('./app', {extension: '.min.js'}))
         .pipe(debug({title: 'JS:'}))
         //.pipe(rename({suffix: '.min'}))
         .pipe(jsmin())
-        .pipe(gulp.dest('./public/assets'))
+        .pipe(gulp.dest('./app'))
         .on('error', gutil.log)
 		.on('end', function(){
             browserSync.reload();
         });
+});
+
+gulp.task('minify', function() {
+  return gulp.src('src/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('app'));
 });
 
 //watch
@@ -58,16 +65,16 @@ gulp.task('refresh', function(){
 	browserSync.reload();
 });
 
-gulp.task('watch', ['sass', 'jsmin'], function(){
+gulp.task('watch', ['sass', 'jsmin', 'minify'], function(){
 	browserSync.init({
 		server: {
-			baseDir: './public'
+			baseDir: './app'
 		},
 		open: false
 	});
 
 	gulp.watch('./src/**/*.sass', ['sass']);
-	gulp.watch(['./public/*.html', './public/templates/**/*.html', './public/templates/*.html'], ['refresh']);
+	gulp.watch(['./src/*.html', './src/**/*.html'], ['minify']);
 	gulp.watch('./src/**/*.js', ['jsmin']);
 	//gulp.watch('./gulpfile.js', ['gulp-reload']);
 });
