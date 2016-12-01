@@ -1,5 +1,5 @@
-app.controller('homeCtrl', function () {    
+app.controller('homeCtrl', function($stateParams) {    
     var vm = this;
 
-    vm.title = 'meu titulo da home';
+    vm.title = $stateParams.promoName;
 });

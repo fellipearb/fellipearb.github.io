@@ -23,8 +23,7 @@ http://swagger.io/<br><br>
 <ul>
     <li>Link</li>
     <li>Imagem</li>
-    <li>Texto</li>
-    <li>Botões</li>    
+    <li>Alt</li>
 </ul><br>
 
 <h3>Moléculas:</h3>

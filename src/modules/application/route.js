@@ -4,11 +4,14 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     var homeState = {
         name: 'home',
-        url: '/',
+        url: '/:promoName',
         templateUrl: 'modules/home/partials/home.html',
         controller: "homeCtrl",
-        controllerAs: "home"
-    }
+        controllerAs: "home",
+        // data: {
+        //     css: 'modules/application/components.css'
+        // }
+    };
 
     $stateProvider.state(homeState);
 });

@@ -12,26 +12,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Óticas Carol</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 
 <body>
-    <div menu-promocao></div>
-    <ui-view></ui-view>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <div banner></div>
+                <div menu-promocao></div>
+                <ui-view></ui-view>
+            </div>
+        </div>
+    </div>
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400,600">
     <!--Incluindo css plugins-->
     <link href="/lib/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!--Incluindo css dev-->
-    <link href="/modules/application/app.css" rel="stylesheet">
+    <link href="/modules/application/css/app.css" rel="stylesheet">
 
-    <!--Incluindo js plugins-->
+    <!--Incluindo angularjs plugins-->
     <script src="/lib/bower_components/angular/angular.min.js"></script>
     <script src="/lib/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/lib/bower_components/angular-ui-router-styles/ui-router-styles.js"></script>
+    <script src="/lib/bower_components/angular-css-injector/angular-css-injector.min.js"></script>
 
     <!--Incluindo js application-->
     <script src="/modules/application/app.js"></script>
     <script src="/modules/application/route.js"></script>
-    <script src="/modules/application/controlers/appCtrl.js"></script>
-    <script src="/modules/application/directives/appDrct.js"></script>
+
+    <!--Incluindo js components-->
+    <script src="/modules/components/banner/bannerCtrl.js"></script>
+    <script src="/modules/components/banner/bannerDrct.js"></script>
+    <script src="/modules/components/menu/menuCtrl.js"></script>
+    <script src="/modules/components/menu/menuDrct.js"></script>
 
     <!--Incluindo js home-->
     <script src="/modules/home/controlers/homeCtrl.js"></script>
