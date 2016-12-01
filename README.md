@@ -60,3 +60,40 @@ http://swagger.io/<br><br>
 
 <h3>Organismos:</h3>
 <p>Texto Legal</p><br>
+
+<h1>Regulamento - Atomic Design</h1>
+<h2>Texto Regulamento</h2>
+<h3>Atomos:</h3>
+<ul>
+    <li>Titulo</li>
+    <li>Subtitulo</li>
+    <li>Texto Regulamento</li>
+    <li>Barra de rolagem personalizada</li>
+</ul><br>
+
+<h3>Moléculas:</h3>
+<p>Texto</p>
+
+<h3>Organismos:</h3>
+<p>Texto Regulamento</p><br>
+
+<h1>Cadastro - Atomic Design</h1>
+<h2>Texto Regulamento</h2>
+<h3>Atomos:</h3>
+<ul>
+    <li>Lightbox</li>
+    <li>Video</li>
+    <li>Titulo</li>
+    <li>Subtitulo</li>
+    <li>Inputs</li>
+    <li>Selects</li>
+    <li>Radios Buttons</li>
+    <li>Buttons</li>
+    <li>Link para consultar CEP</li>
+</ul><br>
+
+<h3>Moléculas:</h3>
+<p>Formulário</p>
+
+<h3>Organismos:</h3>
+<p>Formulário para cadastro de usuários no sistema</p><br>
