@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jsmin = require('gulp-jsmin');
 var htmlmin = require('gulp-htmlmin');
+var image = require('gulp-image');
 var rename = require('gulp-rename');
 var changed = require('gulp-changed');
 var debug = require('gulp-debug');
@@ -12,9 +13,6 @@ var gutil = require('gulp-util');
 var spawn = require('child_process').spawn;
 
 function theError(error){
-    //var type = (error.plugin != 'gulp-sass') ? 'SCRIPTS' : 'SASS';
-    //console.warn(error);
-    //console.log('\n::::::: ERRO COMPILANDO '+type+'. AGUARDANDO CORREÇÃO. ::::::::')
     gutil.beep();
     gutil.log(error.formatted);
     this.emit('end');
@@ -29,9 +27,8 @@ gulp.task('gulp-reload', function() {
 //default tasks
 gulp.task('sass', function(){
 	gulp.src('./src/**/*.sass')
-        .pipe(changed('./app', {extension: '.min.css'}))
-        .pipe(debug({title: 'SASS:'}))
-        //.pipe(rename({suffix: '.min'}))
+        .pipe(changed('./app', {extension: '.css'}))
+        .pipe(debug({title: 'SASS:'}))        
 		.pipe(sass({
             sourceComments: 'map',
             sourceMap: 'sass',
@@ -43,9 +40,8 @@ gulp.task('sass', function(){
 
 gulp.task('jsmin', function () {
     gulp.src('./src/**/*.js')
-        .pipe(changed('./app', {extension: '.min.js'}))
-        .pipe(debug({title: 'JS:'}))
-        //.pipe(rename({suffix: '.min'}))
+        .pipe(changed('./app', {extension: '.js'}))
+        .pipe(debug({title: 'JS:'}))        
         .pipe(jsmin())
         .pipe(gulp.dest('./app'))
         .on('error', gutil.log)
@@ -55,10 +51,25 @@ gulp.task('jsmin', function () {
 });
 
 gulp.task('minify', function() {
-  return gulp.src(['src/*.html', 'src/**/*.html', 'src/**/**/*.html'])
+  return gulp.src(['./src/*.html', './src/**/*.html', './src/**/**/*.html'])
+    .pipe(changed('./app', {extension: '.html'}))
+    .pipe(debug({title: 'Html:'}))
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('app'))
     .pipe(browserSync.stream());
+});
+
+gulp.task('image', function () {
+  gulp.src(
+      [
+          './src/*.jpg', './src/**/*.jpg', './src/**/**/*.jpg',
+          './src/*.png', './src/**/*.png', './src/**/**/*.png',
+          './src/*.gif', './src/**/*.gif', './src/**/**/*.gif',
+          './src/*.svg', './src/**/*.svg', './src/**/**/*.svg',
+      ]
+    )
+    .pipe(image())
+    .pipe(gulp.dest('./app'));
 });
 
 //watch
@@ -66,7 +77,7 @@ gulp.task('refresh', function(){
 	browserSync.reload();
 });
 
-gulp.task('watch', ['sass', 'jsmin', 'minify'], function(){
+gulp.task('watch', ['sass', 'jsmin', 'minify', 'image'], function(){
 	browserSync.init({
 		server: {
 			baseDir: './app'
@@ -74,9 +85,16 @@ gulp.task('watch', ['sass', 'jsmin', 'minify'], function(){
 		open: false
 	});
 
-	gulp.watch('./src/**/*.sass', ['sass']);
-	gulp.watch(['./src/*.html', './src/**/*.html'], ['minify']);
-	gulp.watch('./src/**/*.js', ['jsmin']);
+	gulp.watch('src/**/*.sass', ['sass']);
+    gulp.watch('src/**/*.js', ['jsmin']);
+	gulp.watch(['src/*.html', 'src/**/*.html'], ['minify']);
+    gulp.watch([
+          './src/*.jpg', './src/**/*.jpg', './src/**/**/*.jpg',
+          './src/*.png', './src/**/*.png', './src/**/**/*.png',
+          './src/*.gif', './src/**/*.gif', './src/**/**/*.gif',
+          './src/*.svg', './src/**/*.svg', './src/**/**/*.svg',
+    ], ['image']);
+
 	//gulp.watch('./gulpfile.js', ['gulp-reload']);
 });
 
