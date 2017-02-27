@@ -3,6 +3,5 @@ var app = angular.module('oticascarol', [
     'ngSanitize',
     'uiRouterStyles',
     'angular.css.injector'
-]);
-
-var endpoint = 'http://localhost:3000/';
+]),
+endpoint = 'http://localhost:3000/';

@@ -1,2 +1,2 @@
 
-var app=angular.module('oticascarol',['ui.router','ngSanitize','uiRouterStyles','angular.css.injector']);var endpoint='http://localhost:3000/';
+var app=angular.module('oticascarol',['ui.router','ngSanitize','uiRouterStyles','angular.css.injector']),endpoint='http://localhost:3000/';

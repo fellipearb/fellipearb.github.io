@@ -1,0 +1,41 @@
+@import '../../../modules/application/css/var.sass'
+@import '../../../modules/application/css/mixins.sass'
+
+.overflow
+    top: 0
+    right: 0
+    position: absolute    
+    width: 100%
+    height: 100%
+    opacity: 0.8
+    background: #000
+
+menu
+    width: 350px
+    max-width: 90%
+    padding: 0
+    position: absolute
+    top: 0
+    right: 0
+    margin: 0
+    z-index: 20
+
+    .content
+        &.active
+            background: $tColor
+
+    button
+        margin-top: 10px
+        border: none
+        background: transparent
+        padding: 0
+
+    ul
+        margin-top: 10px
+        
+        a
+            color: $sColor
+            padding: 7px 0
+            display: block
+            text-transform: uppercase
+            font-weight: bold

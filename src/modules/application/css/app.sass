@@ -1,8 +1,31 @@
 @import 'var.sass'
+@import 'mixins.sass'
+
+@include font()
 
 *
-    font-family: $font
+    font-family: $pFont
 
-h1
+.tar
+    text-align: right
+
+.tal
+    text-align: left
+
+.tac
     text-align: center
-    color: $pColor        
+
+ul, li
+    list-style: none
+    padding-left: 0
+
+header
+    position: relative
+
+h1    
+    color: $pColor
+    font-family: $sFont
+
+h2
+    color: $pColor
+    font-family: $sFont

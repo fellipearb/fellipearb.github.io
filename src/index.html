@@ -1,13 +1,13 @@
 <!-- 
  *
- * Desenvolvido por addialeto.net - Fellipe Barros, Cleberson Gomes, Renan Zucherato
- * versão: 2.0.0
+ * Desenvolvido - Fellipe Barros
+ * versão: 1.0.0
  * template: Home
  *
 -->
 
 <!DOCTYPE html>
-<html lang="en" ng-app="oticascarol">
+<html lang="en" ng-app="oticascarol" ng-init="overflow = false" ng-class="overflow ? 'menu-open' : ''">
 <head>
     <meta charset="UTF-8">
     <title>Fellipe Barros - Portfolio</title>
@@ -15,17 +15,18 @@
     <!--Incluindo css plugins-->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:700,400,600" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="lib/bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!--Incluindo css dev-->
     <link href="modules/application/css/app.css" rel="stylesheet">
 </head>
-<body>
+<body>    
     <div class="container-fluid">
         <div class="row">
             <header class="col-xs-12">
                 <div class="row">
-                    <h1>FARB</h1>
+                    <h1 class="tac fz-40">FARB</h1>
                 </div>
                 <div class="row">
                     <menu></menu>

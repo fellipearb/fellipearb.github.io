@@ -1,0 +1,6 @@
+@mixin font()
+    $class-slug: fz !default
+
+    @for $i from 1 through 40
+        .#{$class-slug}-#{$i}
+            font-size: 10px + $i

@@ -1,5 +1,20 @@
-<ul class="pull-left">
-    <li ng-repeat="(i, item) in menu.itens" class="col-xs-6 col-sm-3">
-        <a ui-sref="{{item.link}}" ui-sref-active="active" data-icon="{{item.icone}}" class="menu-promocao {{item.border}}">{{item.texto}}</a>
-    </li>
-</ul>
+<div class="overflow" ng-show="menu.toogle" style="width: {{menu.width}}px; height: {{menu.height}}px"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 content" ng-class="menu.toogle ? 'active' : 'noactive'" style="height: {{menu.height}}px">
+            <h2 class="pull-left" ng-show="menu.toogle">FARB</h2>
+            <button
+                class="toogle-menu ion-android-menu pull-right fz-30"
+                ng-click="menu.toogle ? menu.toogle = false : menu.toogle = true"
+                ng-class="menu.toogle ? 'active' : 'noactive'">
+            </button>
+            <div class="col-xs-12">
+                <ul class="row" ng-show="menu.toogle">
+                    <li ng-repeat="(i, item) in menu.itens" class="row">
+                        <a ui-sref="{{item.link}}" ui-sref-active="active" data-icon="{{item.icone}}" class="menu tar col-xs-12 fz-12 {{item.border}}">{{item.texto}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

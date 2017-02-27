@@ -1,11 +1,197 @@
 @charset "UTF-8";
-/* line 3, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-1 {
+  font-size: 11px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-2 {
+  font-size: 12px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-3 {
+  font-size: 13px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-4 {
+  font-size: 14px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-5 {
+  font-size: 15px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-6 {
+  font-size: 16px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-7 {
+  font-size: 17px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-8 {
+  font-size: 18px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-9 {
+  font-size: 19px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-10 {
+  font-size: 20px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-11 {
+  font-size: 21px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-12 {
+  font-size: 22px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-13 {
+  font-size: 23px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-14 {
+  font-size: 24px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-15 {
+  font-size: 25px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-16 {
+  font-size: 26px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-17 {
+  font-size: 27px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-18 {
+  font-size: 28px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-19 {
+  font-size: 29px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-20 {
+  font-size: 30px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-21 {
+  font-size: 31px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-22 {
+  font-size: 32px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-23 {
+  font-size: 33px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-24 {
+  font-size: 34px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-25 {
+  font-size: 35px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-26 {
+  font-size: 36px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-27 {
+  font-size: 37px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-28 {
+  font-size: 38px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-29 {
+  font-size: 39px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-30 {
+  font-size: 40px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-31 {
+  font-size: 41px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-32 {
+  font-size: 42px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-33 {
+  font-size: 43px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-34 {
+  font-size: 44px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-35 {
+  font-size: 45px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-36 {
+  font-size: 46px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-37 {
+  font-size: 47px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-38 {
+  font-size: 48px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-39 {
+  font-size: 49px; }
+
+/* line 5, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/mixins.sass */
+.fz-40 {
+  font-size: 50px; }
+
+/* line 6, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
 * {
   font-family: "Open Sans", sans-serif; }
 
-/* line 6, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
+/* line 9, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
+.tar {
+  text-align: right; }
+
+/* line 12, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
+.tal {
+  text-align: left; }
+
+/* line 15, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
+.tac {
+  text-align: center; }
+
+/* line 18, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
+ul, li {
+  list-style: none;
+  padding-left: 0; }
+
+/* line 22, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
+header {
+  position: relative; }
+
+/* line 25, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
 h1 {
-  text-align: center;
-  color: #4ECDC4; }
+  color: #4ECDC4;
+  font-family: Lobster; }
+
+/* line 29, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
+h2 {
+  color: #4ECDC4;
+  font-family: Lobster; }
 
 /*# sourceMappingURL=../../../../sass */
