@@ -1,4 +1,4 @@
-app.controller('menuPromocaoCtrl', function($stateParams, cssInjector) {
+app.controller('menuCtrl', function($stateParams, cssInjector) {
     //css inject
     cssInjector.add('modules/components/menu/menu.css');
     
@@ -21,9 +21,9 @@ app.controller('menuPromocaoCtrl', function($stateParams, cssInjector) {
         },
         {
             // link: '/cadastrese/' + $stateParams.promoName,
-            link: 'cadastro',
+            link: 'contato',
             icone: '/assets/images/banner.jpg',
-            texto: 'Cadastre-se',
+            texto: 'Contato',
             border: 'pColor'
         },
         {

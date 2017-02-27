@@ -18,11 +18,11 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="container">
-                <banner></banner>
-                <menu-promocao></menu-promocao>
-                <ui-view></ui-view>
-            </div>
+            <header>
+                <menu></menu>
+            </header>
+            <banner></banner>
+            <ui-view></ui-view>
         </div>
     </div>
     
@@ -44,28 +44,22 @@
     <script src="/modules/application/app.js"></script>
     <script src="/modules/application/route.js"></script>
 
-    <!--Incluindo js component banner -->
-    <script src="/modules/components/banner/banner-services.js"></script>
+    <!--Incluindo js component banner -->    
     <script src="/modules/components/banner/banner-controller.js"></script>
     <script src="/modules/components/banner/banner-component.js"></script>
     
     <!--Incluindo js components menu -->
     <script src="/modules/components/menu/menu-controller.js"></script>
     <script src="/modules/components/menu/menu-component.js"></script>
-    
-    <!--Incluindo js components regulamento -->
-    <script src="/modules/components/regulamento/regulamento-services.js"></script>
-    <script src="/modules/components/regulamento/regulamento-controller.js"></script>
-    <script src="/modules/components/regulamento/regulamento-component.js"></script>
 
-    <!--Incluindo js components form-cadastro -->
-    <script src="/modules/components/form-cadastro/form-cadastro-services.js"></script>
-    <script src="/modules/components/form-cadastro/form-cadastro-controller.js"></script>
-    <script src="/modules/components/form-cadastro/form-cadastro-component.js"></script>
+    <!--Incluindo js components form-contato -->
+    <script src="/modules/components/form-contato/form-contato-services.js"></script>
+    <script src="/modules/components/form-contato/form-contato-controller.js"></script>
+    <script src="/modules/components/form-contato/form-contato-component.js"></script>
 
     <!--Incluindo js home-->
-    <script src="/modules/home/controlers/home-controller.js"></script>
-    <script src="/modules/home/directives/home-directive.js"></script>
+    <script src="/modules/home/home-controller.js"></script>
+    <script src="/modules/home/home-directive.js"></script>
 
     <!--Incluindo js home-->
     <script src="/modules/cadastro/controlers/cadastro-controller.js"></script>

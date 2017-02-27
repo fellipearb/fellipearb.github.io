@@ -4,20 +4,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     var homeState = {
         name: 'home',
-        url: '/:promoName',
-        templateUrl: 'modules/home/partials/home.html',
+        url: '/',
+        templateUrl: 'modules/home/home.html',
         controller: "homeCtrl",
         controllerAs: "home"
     };
 
-    var cadastroState = {
-        name: 'cadastro',
-        url: '/cadastro/:promoName',
-        templateUrl: 'modules/cadastro/partials/cadastro.html',
-        controller: "cadastroCtrl",
-        controllerAs: "cadastro"
-    };
-
-    $stateProvider.state(homeState);
-    $stateProvider.state(cadastroState);
+    $stateProvider.state(homeState);    
 });
