@@ -3,9 +3,9 @@
 * {
   font-family: "Open Sans", sans-serif; }
 
-@media (min-width: 760px) {
-  /* line 7, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
-  .container {
-    max-width: 1000px; } }
+/* line 6, /home/fellipe/Área de Trabalho/Projetos/portifolio/src/modules/application/css/app.sass */
+h1 {
+  text-align: center;
+  color: #4ECDC4; }
 
 /*# sourceMappingURL=../../../../sass */
